@@ -7,12 +7,12 @@ export const getChessComGames = async (archive: string): Promise<Game[]> => {
     url: game.url,
     fen: game.fen,
     white: {
-      rating: game.white.rating,
+      rating: game.white?.rating ?? 0,
       result: game.white.result,
       username: game.white.username
     },
     black: {
-      rating: game.black.rating,
+      rating: game.black?.rating ?? 0,
       result: game.black.result,
       username: game.black.username
     },
