@@ -7,11 +7,11 @@ export type Game = {
   fen: string;
 };
 type Ratings = {
-  last: {
-    rating: number;
+  last?: {
+    rating?: number;
   };
-  best: {
-    rating: number;
+  best?: {
+    rating?: number;
   };
 };
 type GameType = 'chess_rapid' | 'chess_bullet' | 'chess_blitz';
